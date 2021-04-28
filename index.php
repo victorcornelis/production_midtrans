@@ -2,8 +2,6 @@
 
 $server_key = "Mid-server-lrSFHV3DgJU4jgRdGcgAyfWe";
 
-$is_production = true;
-
 $api_url = 'https://app.midtrans.com/snap/v1/transactions';
 
 if( !strpos($_SERVER['REQUEST_URI'], '/charge') ) {
@@ -32,7 +30,7 @@ function chargeAPI($api_url, $server_key, $request_body){
     CURLOPT_URL => $api_url,
     CURLOPT_RETURNTRANSFER => 1,
     CURLOPT_POST => 1,
-    CURLOPT_HEADER => 0,
+    CURLOPT_HEADER => 1,
 
 
     CURLOPT_HTTPHEADER => array(
