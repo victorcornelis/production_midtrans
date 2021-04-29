@@ -2,9 +2,10 @@
 
 $server_key = "Mid-server-lrSFHV3DgJU4jgRdGcgAyfWe";
 
-$is_production = true;
-$isSanitized = true;
-$is3ds = true;
+Veritrans_Config::$serverKey = "Mid-server-lrSFHV3DgJU4jgRdGcgAyfWe";
+Veritrans_Config::$isProduction = true;
+Veritrans_Config::$isSanitized = true;
+Veritrans_Config::$is3ds = true
 
 $api_url = $is_production ? 
   'https://app.midtrans.com/snap/v1/transactions' : 
