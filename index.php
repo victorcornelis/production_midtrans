@@ -4,7 +4,7 @@ $server_key = "Mid-server-lrSFHV3DgJU4jgRdGcgAyfWe";
 
 $isProduction = true;
 $isSanitized = true;
-$is3ds = true
+$is3ds = true;
 
 $api_url = $is_production ? 
   'https://app.midtrans.com/snap/v1/transactions' : 
